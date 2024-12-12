@@ -3,6 +3,8 @@
 import Wrapper from "@/components/shareable/Wrapper"
 import Author from "@/components/widjets/Author"
 import Comment from "@/components/widjets/Comment"
+import Image from "next/image"
+import Link from "next/link"
 
 
 
@@ -156,7 +158,7 @@ const IDpage = ({params}:{params:{id:string}}) => {
 
 {post.image &&(
 
-  <img src={post.image} alt={post.title} className="w-[600px] h-auto rounded-md mt-9" />
+  <Image src={post.image} alt={post.title} height={500} width={500} className="w-[600px] h-auto rounded-md mt-9" />
 )}
 <div className="mt-8 " >
   {renderParagraph(post.description)}
@@ -169,7 +171,7 @@ const IDpage = ({params}:{params:{id:string}}) => {
 
 <div className="mt-11">
 
-<a href="/" className="px-6 py-3 bg-teal-500 text-white mt-7">{post.home}</a>
+<Link href="/" className="px-6 py-3 bg-teal-500 text-white mt-7">{post.home}</Link>
 </div>
 
 <Comment postid={post.id}/>

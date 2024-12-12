@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
+import Image from 'next/image';
 
 interface BlogI {
   post: { id: string; title: string; description: string; date: string; imageUrl: string };
@@ -13,9 +14,11 @@ function BlogCard({ post, isDarkbackground }: BlogI) {
       className={`p-4 ${isDarkbackground ? 'bg-slate-800 text-white' : 'text-slate-800'} rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300`}
     >
       {/* Fixed image source */}
-      <img
+      <Image
         src={post.imageUrl}
         alt={post.title}
+        height={500}
+        width={500}
         className='w-full object-cover rounded-lg'
       />
       <CardTitle className='text-xl font-normal mt-4 text-center'>{post.title}</CardTitle>

@@ -1,8 +1,5 @@
 
-
 "use client"
-
-
 import React, { useState } from 'react';
 import { Card, CardContent } from '../ui/card';
 import { Input } from '../ui/input';
@@ -19,7 +16,7 @@ interface CommentSecProps {
   postid: string;
 }
 
-function Comment({ postid }: CommentSecProps) {
+function Comment({ }: CommentSecProps) {
   const [comments, setComments] = useState<CommentSec[]>([]);
   const [newComment, setNewComment] = useState('');
   const [authorName, setAuthorName] = useState('');
