@@ -8,10 +8,12 @@ import {
     SheetTrigger,
   } from "@/components/ui/sheet"
 import { Menu } from 'lucide-react'
+import Wrapper from '../shareable/Wrapper'
   
 
 const Header = () => {
   return (
+    <Wrapper>
 
   
 <header className='flex justify-between items-center'>
@@ -68,6 +70,7 @@ const Header = () => {
 
 
 </header>
+</Wrapper>
   )
 }
 

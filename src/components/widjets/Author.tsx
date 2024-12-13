@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Wrapper from '../shareable/Wrapper'
+import Link from 'next/link'
 
 function Author() {
   return (
@@ -33,19 +34,11 @@ Twitter
 
     </a>
 
+    <Link href={'https://github.com/AliAkbarBrohiWebDeveloper/blog-website.git'}  className='px-4 py-2 text-white bg-teal-600 rounded-md hover:bg-teal-700'> GitHub</Link>
 
-    <a href="#" className='px-4 py-2 text-white bg-teal-600 rounded-md hover:bg-teal-700'>
 
-GitHub
-
-    </a>
-
-    <a href="#" className='px-4 py-2 text-white bg-teal-600 rounded-md hover:bg-teal-700'>
-
-Linkedin
-
-    </a>
-
+<Link href={'https://www.linkedin.com/in/ali-akbar-brohi-510971300/'}  className='px-4 py-2 text-white bg-teal-600 rounded-md hover:bg-teal-700'> Linkedin</Link>
+   
 </div>
 
 
