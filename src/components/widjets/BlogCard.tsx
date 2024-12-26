@@ -2,6 +2,7 @@
 import React from 'react';
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface BlogI {
   post: { id: string; title: string; description: string; date: string; imageUrl: string };
@@ -33,12 +34,12 @@ function BlogCard({ post, isDarkbackground }: BlogI) {
         </p>
         
         
-        <a
+        <Link
           href={`/Pages/${post.id}`}  
           className={`w-full px-6 py-3 text-white bg-blue-600 rounded text-center font-bold hover:bg-blue-500 ${isDarkbackground ? 'bg-black hover:bg-red-600' : 'bg-black hover:bg-red-600'}`}
         >
           Read more
-        </a>
+        </Link>
       </div>
     </Card>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
-import BlogCard from './BlogCard';
-import Wrapper from '../shareable/Wrapper';
+
+import BlogCard from '@/components/widjets/BlogCard';
+import Wrapper from '@/components/shareable/Wrapper';
 
 const posts = [
   {
@@ -82,7 +83,7 @@ const posts = [
 
 ];
 
-function Mega() {
+function MegaPage() {
   return (
     <Wrapper>
     <div className="py-10">
@@ -92,7 +93,7 @@ function Mega() {
         {posts.map((item, index) => {
           return (
             <div key={item.id}>
-              {/* Pass a single post object to the BlogCard */}
+              
               <BlogCard post={item} isDarkbackground={index % 2 === 0} />
             </div>
           );
@@ -103,5 +104,5 @@ function Mega() {
   );
 }
 
-export default Mega;
+export default MegaPage;
 
