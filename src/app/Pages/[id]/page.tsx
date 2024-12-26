@@ -6,7 +6,7 @@ import Wrapper from "@/components/shareable/Wrapper"
 import Author from "@/components/widjets/Author"
 import Comment from "@/components/widjets/Comment"
 import Image from "next/image"
-import Link from "next/link"
+
 
 const details = [
   {
